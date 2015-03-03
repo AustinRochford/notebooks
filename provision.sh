@@ -19,3 +19,6 @@ apt-get install -y git
 ln -s /usr/include/freetype2/ft2build.h /usr/include/
 pip install pandas patsy statsmodels
 pip install --process-dependency-links git+https://github.com/pymc-devs/pymc3
+
+# Install giphy-ipython-magic
+pip install giphy-ipython-magic
