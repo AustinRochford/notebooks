@@ -10,9 +10,9 @@ pip install "ipython[notebook]"
 apt-get install -y gfortran libblas-dev liblapack-dev
 pip install numpy scipy
 
-# Install matplotlib and Seaborn
+# Install matplotlib, Seaborn, and bokeh
 apt-get install -y libpng12-dev libfreetype6-dev
-pip install matplotlib seaborn
+pip install matplotlib seaborn bokeh
 
 # Install pandas, patsy, statsmodels, and pymc3
 apt-get install -y git 
