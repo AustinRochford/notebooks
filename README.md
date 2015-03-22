@@ -3,3 +3,5 @@ This is the Vagrant configuration I use to launch virtual machines that I use as
 To provision a virtual machine, run `vagrant up`.  To run an IPython notebook server, run `make run`.
 
 With the included port forwarding, you can access the notebook server at `localhost:8888`.
+
+This code is distributed under the [MIT License](http://opensource.org/licenses/MIT).
