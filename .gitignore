@@ -1,2 +1,8 @@
 .vagrant
 notebooks
+profile/log
+profile/pid
+profile/security
+profile/static
+profile/startup
+profile/history.sqlite
