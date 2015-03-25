@@ -18,7 +18,7 @@ c = get_config()
 # c.NotebookApp.jinja_environment_options = {}
 
 # The IP address the notebook server will listen on.
-# c.NotebookApp.ip = 'localhost'
+c.NotebookApp.ip = '0.0.0.0'
 
 # DEPRECATED use base_url
 # c.NotebookApp.base_project_url = '/'
@@ -46,7 +46,7 @@ c = get_config()
 # platform dependent and determined by the python standard library `webbrowser`
 # module, unless it is overridden using the --browser (NotebookApp.browser)
 # configuration option.
-# c.NotebookApp.open_browser = True
+c.NotebookApp.open_browser = False
 
 # The date format used by logging formatters for %(asctime)s
 # c.NotebookApp.log_datefmt = '%Y-%m-%d %H:%M:%S'
@@ -104,7 +104,7 @@ c = get_config()
 # c.NotebookApp.tornado_settings = {}
 
 # The directory to use for notebooks and kernels.
-# c.NotebookApp.notebook_dir = u''
+c.NotebookApp.notebook_dir = u'/vagrant/notebooks'
 
 # The kernel manager class to use.
 # c.NotebookApp.kernel_manager_class = <class 'IPython.html.services.kernels.kernelmanager.MappingKernelManager'>
