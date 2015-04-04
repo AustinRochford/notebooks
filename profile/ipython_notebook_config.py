@@ -72,7 +72,8 @@ c.NotebookApp.open_browser = False
 # c.NotebookApp.allow_origin = ''
 
 # The notebook manager class to use.
-# c.NotebookApp.contents_manager_class = <class 'IPython.html.services.contents.filemanager.FileContentsManager'>
+c.NotebookApp.contents_manager_class = 's3nb.S3ContentsManager'
+c.S3ContentsManager.s3_base_uri = 's3://jupyter/notebooks/'
 
 # Use a regular expression for the Access-Control-Allow-Origin header
 # 

@@ -1,4 +1,5 @@
 .vagrant
+credentials
 notebooks
 profile/log
 profile/pid
