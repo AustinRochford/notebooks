@@ -74,6 +74,7 @@ c.NotebookApp.open_browser = False
 # The notebook manager class to use.
 c.NotebookApp.contents_manager_class = 's3nb.S3ContentsManager'
 c.S3ContentsManager.s3_base_uri = 's3://jupyter/notebooks/'
+c.S3ContentsManager.checkpoints_kwargs = {'root_dir': '/home/vagrant/checkpoints'}
 
 # Use a regular expression for the Access-Control-Allow-Origin header
 # 
@@ -105,7 +106,7 @@ c.S3ContentsManager.s3_base_uri = 's3://jupyter/notebooks/'
 # c.NotebookApp.tornado_settings = {}
 
 # The directory to use for notebooks and kernels.
-c.NotebookApp.notebook_dir = u'/vagrant/notebooks'
+# c.NotebookApp.notebook_dir = u'/vagrant/notebooks'
 
 # The kernel manager class to use.
 # c.NotebookApp.kernel_manager_class = <class 'IPython.html.services.kernels.kernelmanager.MappingKernelManager'>
