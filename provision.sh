@@ -18,8 +18,8 @@ pip install matplotlib seaborn bokeh
 
 # Install pandas, patsy, statsmodels, scikit-learn and pymc3
 ln -s /usr/include/freetype2/ft2build.h /usr/include/
-pip install pandas patsy statsmodels scikit-learn
-pip install --process-dependency-links git+https://github.com/pymc-devs/pymc3
+pip install pandas patsy statsmodels scikit-learn theano
+pip install git+https://github.com/pymc-devs/pymc3
 
 # Install IBash kernel
 pip install git+https://github.com/takluyver/bash_kernel
@@ -30,3 +30,6 @@ pip install metakernel octave_kernel
 
 # Install giphy-ipython-magic
 pip install giphy-ipython-magic
+
+# Install sqlite
+apt-get install -y sqlite
