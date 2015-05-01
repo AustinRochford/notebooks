@@ -30,6 +30,3 @@ pip install metakernel octave_kernel
 
 # Install giphy-ipython-magic
 pip install giphy-ipython-magic
-
-# Install tmux
-apt-get install -y tmux
