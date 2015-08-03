@@ -7,6 +7,7 @@ apt-get install -y git
 apt-get install -y python-pip python2.7-dev libzmq-dev
 pip install "ipython[notebook]"
 pip install git+https://github.com/monetate/s3nb
+pip install git+https://github/AustinRochford/s3img-ipython-magic
 
 # Install NumPy and SciPy
 apt-get install -y gfortran libblas-dev liblapack-dev
@@ -14,7 +15,8 @@ pip install numpy scipy
 
 # Install matplotlib, Seaborn, and bokeh
 apt-get install -y libpng12-dev libfreetype6-dev
-pip install matplotlib seaborn bokeh
+pip install matplotlib bokeh
+pip install seaborn 
 
 # Install pandas, patsy, statsmodels, scikit-learn and pymc3
 ln -s /usr/include/freetype2/ft2build.h /usr/include/
