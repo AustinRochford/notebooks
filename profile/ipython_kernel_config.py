@@ -140,7 +140,7 @@ c = get_config()
 # c.IPKernelApp.gui = None
 
 # A list of dotted module names of IPython extensions to load.
-c.IPKernelApp.extensions = ['giphy_magic']
+c.IPKernelApp.extensions = ['giphy_magic', 's3img_magic']
 
 # redirect stderr to the null device
 # c.IPKernelApp.no_stderr = False
