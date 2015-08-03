@@ -1,5 +1,6 @@
 #!/bin/bash
 
+add-apt-repository ppa:marutter/rrutter
 apt-get update
 apt-get install -y git 
 
@@ -35,3 +36,7 @@ pip install giphy-ipython-magic
 
 # Install sqlite
 apt-get install -y sqlite
+
+# Install R
+apt-get install r-base r-base-dev 
+pip install rpy2
