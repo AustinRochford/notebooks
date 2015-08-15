@@ -40,3 +40,6 @@ apt-get install -y sqlite
 # Install R
 apt-get install r-base r-base-dev 
 pip install rpy2
+
+# Install AWS command line tools
+pip install awscli
