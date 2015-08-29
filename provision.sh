@@ -6,7 +6,7 @@ apt-get install -y git
 
 # Install IPython
 apt-get install -y python-pip python2.7-dev libzmq-dev
-pip install "ipython[notebook]"
+pip install "ipython[notebook]==3.2.1"
 pip install git+https://github.com/monetate/s3nb
 pip install git+https://github/AustinRochford/s3img-ipython-magic
 
@@ -38,8 +38,12 @@ pip install giphy-ipython-magic
 apt-get install -y sqlite
 
 # Install R
-apt-get install r-base r-base-dev 
+apt-get install -y r-base r-base-dev 
 pip install rpy2
 
 # Install AWS command line tools
 pip install awscli
+
+# Install PyDOT
+pip install pydot
+apt-get install -y graphviz
