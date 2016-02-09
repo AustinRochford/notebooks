@@ -6,7 +6,7 @@ apt-get install -y git
 
 # Install IPython
 apt-get install -y python-pip python2.7-dev libzmq-dev
-pip install "ipython[notebook]==3.2.1"
+pip install "ipython[notebook]"
 pip install git+https://github.com/monetate/s3nb
 pip install git+https://github/AustinRochford/s3img-ipython-magic
 
