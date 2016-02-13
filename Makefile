@@ -15,4 +15,4 @@ kill:
 restart: kill run;
 
 run:
-	${SSH} -c "tmux new-session -d -n run -s server 'ipython notebook --profile-dir=${PROFILE_DIR}'"
+	${SSH} -c "tmux new-session -d -n run -s server 'jupyter notebook --config=/vagrant/config/ipython_notebook_config.py --no-browser --ip=0.0.0.0'"
