@@ -47,3 +47,7 @@ pip install awscli
 # Install PyDOT
 pip install pydot
 apt-get install -y graphviz
+
+# PySpark
+wget -P/opt http://d3kbcqa49mib13.cloudfront.net/spark-1.6.1-bin-hadoop2.6.tgz
+tar xvzf /opt/spark-1.6.1-bin-hadoop2.6.tgz -C/opt

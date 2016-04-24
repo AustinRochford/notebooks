@@ -15,4 +15,4 @@ kill:
 restart: kill run;
 
 run:
-	${SSH} -c "tmux new-session -d -n run -s server 'jupyter notebook --config=/vagrant/config/ipython_notebook_config.py --no-browser --ip=0.0.0.0'"
+	${SSH} -c "tmux new-session -d -n run -s server 'PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=\"notebook --config=/vagrant/config/ipython_notebook_config.py --no-browser --ip=0.0.0.0\" /opt/spark-1.6.1-bin-hadoop2.6/bin/pyspark'"
