@@ -5,7 +5,7 @@ MAINTAINER Austin Rochford <austin.rochford@gmail.com>
 USER $NB_USER 
 
 RUN pip3 install git+https://github.com/pymc-devs/pymc3
-RUN conda install --quiet --yes -c conda-forge tensorflow
+RUN pip3 install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl
 RUN pip3 install edward
 RUN pip3 install lda
 
