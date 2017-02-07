@@ -18,3 +18,6 @@ RUN conda install --quiet --yes \
 
 RUN conda config --add channels bioconda
 RUN conda install --quiet --yes awscli
+
+# Import matplotlib the first time to build the font cache.
+RUN python -c "import matplotlib.pyplot"
