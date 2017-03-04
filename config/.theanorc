@@ -1,2 +1,5 @@
 [blas]
 ldflags = -lf77blas -latlas -lgfortran
+
+[warn]
+round = False
