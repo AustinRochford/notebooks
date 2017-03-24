@@ -19,8 +19,7 @@ RUN pip3 install git+https://github.com/pymc-devs/pymc3
 
 RUN conda install --quiet --yes \
     boto \
-    # to fix a bug in QT support; hopefully this is not necessary long-term
-    icu=56.1 \
+    pyqt=4 \
     toolz \
     xlrd
 
