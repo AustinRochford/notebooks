@@ -10,4 +10,4 @@ kill:
 restart: kill run;
 
 run:
-	docker run -d -p 8888:8888 -v $(shell pwd)/notebooks:/home/jovyan/work/ --name notebooks notebooks
+	docker run -d -p 8888:8888 -v $(shell pwd)/notebooks:/home/jovyan/work/ --name notebooks notebooks start-notebook.sh --NotebookApp.token=''
