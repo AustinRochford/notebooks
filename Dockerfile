@@ -17,6 +17,8 @@ COPY config/.theanorc "$HOME"/.theanorc
 
 RUN pip3 install git+https://github.com/pymc-devs/pymc3
 
+RUN pip3 install scikit-optimize
+
 RUN conda install --quiet --yes \
     boto \
     pyqt=4 \
