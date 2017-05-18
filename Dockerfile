@@ -15,9 +15,10 @@ USER $NB_USER
 RUN pip3 install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc
 
-RUN pip3 install git+https://github.com/pymc-devs/pymc3
-
+RUN pip3 install git+https://github.com/pymc-devs/pymc3 
 RUN pip3 install scikit-optimize
+RUN pip3 install fbprophet
+RUN pip3 install holidays
 
 RUN conda install --quiet --yes \
     boto \
