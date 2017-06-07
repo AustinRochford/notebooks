@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/datascience-notebook
 
 MAINTAINER Austin Rochford <austin.rochford@gmail.com>
 
@@ -21,7 +21,7 @@ RUN pip3 install scikit-optimize
 
 RUN conda install --quiet --yes \
     boto \
-    pyqt=4 \
+    pyqt \
     toolz \
     xlrd
 
