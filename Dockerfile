@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 USER $NB_USER 
 
-RUN pip3 install git+https://github.com/Theano/Theano.git@rel-0.9.0
+RUN pip3 install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc 
 RUN pip3 install git+https://github.com/pymc-devs/pymc3
 
