@@ -22,7 +22,6 @@ RUN conda install --quiet --yes \
     boto \
     pyqt \
     toolz \
-    us \
     xlrd
 
 # Import matplotlib the first time to build the font cache.
