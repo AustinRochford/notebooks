@@ -13,9 +13,9 @@ RUN apt-get update && \
 
 USER $NB_USER 
 
-RUN pip3 install git+https://github.com/Theano/Theano.git
+RUN pip install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc 
-RUN pip3 install git+https://github.com/pymc-devs/pymc3
+RUN pip install git+https://github.com/pymc-devs/pymc3
 
 RUN conda install --quiet --yes basemap 
 RUN conda install --quiet --yes \
