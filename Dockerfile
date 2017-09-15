@@ -17,6 +17,8 @@ RUN pip install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc 
 RUN pip install git+https://github.com/pymc-devs/pymc3
 
+RUN pip install pystan
+
 RUN conda install --quiet --yes basemap 
 RUN conda install --quiet --yes \
     boto \
