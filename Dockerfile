@@ -19,6 +19,9 @@ RUN pip install git+https://github.com/pymc-devs/pymc3
 
 RUN pip install pystan
 
+RUN pip install dash dash-renderer dash-html-components dash-core-components
+RUN pip install plotly
+
 RUN conda install --quiet --yes basemap 
 RUN conda install --quiet --yes \
     boto \
