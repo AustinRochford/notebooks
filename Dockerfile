@@ -12,9 +12,6 @@ RUN apt-get update && \
 
 USER $NB_USER 
 
-# a hack to get divmod until jupyter-stacks upgrades
-RUN conda install --quiet --yes numpy=1.13
-
 RUN pip install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc 
 RUN pip install git+https://github.com/pymc-devs/pymc3
