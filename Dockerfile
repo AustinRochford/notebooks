@@ -27,7 +27,6 @@ RUN pip install plotly
 RUN conda install --quiet --yes basemap 
 RUN conda install --quiet --yes \
     boto \
-    pyqt \
     toolz \
     xlrd
 
