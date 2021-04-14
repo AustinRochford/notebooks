@@ -12,7 +12,6 @@ RUN apt-get update && \
 
 USER $NB_USER 
 
-RUN pip install git+https://github.com/Theano/Theano.git
 COPY config/.theanorc "$HOME"/.theanorc 
 RUN pip install git+https://github.com/pymc-devs/pymc3
 
