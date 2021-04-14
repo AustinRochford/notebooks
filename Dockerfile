@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/datascience-notebook:latest
 
 MAINTAINER Austin Rochford <austin.rochford@gmail.com>
 
