@@ -31,5 +31,7 @@ RUN conda install --quiet --yes \
     toolz \
     xlrd
 
+RUN pip install watermark
+
 # Import matplotlib the first time to build the font cache.
 RUN python -c "import matplotlib.pyplot"
