@@ -7,16 +7,13 @@ USER $NB_USER
 RUN pip install git+https://github.com/arviz-devs/arviz
 RUN pip install git+https://github.com/pymc-devs/pymc3
 
-RUN conda install --quiet --yes \
-    basemap \
+RUN pip install \
     boto \
     lxml \
-    pyqt \
     toolz \
     us \
+    watermark \
     xlrd
-
-RUN conda install -c conda-forge watermark
 
 # Import matplotlib the first time to build the font cache.
 RUN python -c "import matplotlib.pyplot"
