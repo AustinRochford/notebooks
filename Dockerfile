@@ -10,6 +10,7 @@ RUN pip install git+https://github.com/pymc-devs/pymc3
 RUN pip install \
     boto \
     lxml \
+    mkl-service \
     toolz \
     us \
     watermark \
