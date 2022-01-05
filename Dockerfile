@@ -6,6 +6,7 @@ RUN pip install \
     boto \
     bs4 \
     lxml \
+    sympy \
     toolz \
     us \
     watermark \
