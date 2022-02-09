@@ -5,7 +5,9 @@ MAINTAINER Austin Rochford <austin.rochford@gmail.com>
 RUN pip install \
     boto \
     bs4 \
+    jax jaxlib \
     lxml \
+    numpyro \
     sympy \
     toolz \
     us \
