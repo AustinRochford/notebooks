@@ -2,9 +2,10 @@ FROM gcr.io/deeplearning-platform-release/sklearn-cpu
 
 MAINTAINER Austin Rochford <austin.rochford@gmail.com>
 
-RUN pip install \
+RUN pip install -U \
     boto \
     bs4 \
+    ipywidgets \
     jax jaxlib \
     lxml \
     numpyro \
