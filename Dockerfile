@@ -8,6 +8,7 @@ RUN pip install -U \
     ipywidgets \
     jax jaxlib \
     lxml \
+    mpltern \
     numpyro \
     sympy \
     toolz \
